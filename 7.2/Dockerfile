@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) pdo pdo_mysql \
 	&& docker-php-ext-install -j$(nproc) zip \
     && docker-php-ext-install -j$(nproc) curl \
-    && docker-php-ext-install -j$(nproc) gd
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install -j$(nproc) exif
 
 ## Installs utilities
 RUN apt-get update && apt-get install -y curl vim nano iputils-ping
