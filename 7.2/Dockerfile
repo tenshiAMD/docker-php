@@ -1,5 +1,7 @@
 FROM php:7.2-apache-stretch
 
+LABEL maintainer="Angel Aviel Domaoan <dev.tenshiamd@gmail.com>"
+
 ## Installs dependencies
 RUN apt-get update && apt-get install -y \
 	libmcrypt-dev libreadline-dev \ 
