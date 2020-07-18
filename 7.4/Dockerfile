@@ -49,3 +49,5 @@ RUN apt-get autoremove -y --purge
 
 ## Enables rewrite module for apache2
 RUN a2enmod rewrite
+
+EXPOSE 80
