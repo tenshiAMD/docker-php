@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:7.3.27-apache
 
 LABEL maintainer="Angel Aviel Domaoan <dev.tenshiamd@gmail.com>"
 
