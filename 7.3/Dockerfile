@@ -2,6 +2,8 @@ FROM php:7.3-apache-stretch
 
 LABEL maintainer="Angel Aviel Domaoan <dev.tenshiamd@gmail.com>"
 
+LABEL org.opencontainers.image.source "https://github.com/tenshiAMD/docker-php"
+
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 ## Installs dependencies
