@@ -33,7 +33,6 @@ jobs:
         experimental: [false]
         tag:
           - "7.4"
-          - "7.3"
     steps:
       -
         name: Check out the repo
