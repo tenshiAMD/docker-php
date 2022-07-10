@@ -2,6 +2,8 @@ FROM php:7.3-apache-stretch
 
 LABEL maintainer="Angel Aviel Domaoan <dev.tenshiamd@gmail.com>"
 
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
 ## Installs dependencies
 RUN apt-get update && apt-get install -y \
 	libmcrypt-dev libreadline-dev \ 
