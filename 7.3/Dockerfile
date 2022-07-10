@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y mysql-client
 
 ## Installs Node
 RUN apt-get update && apt-get install -y gnupg2 
-RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get update && apt-get install -y nodejs npm 
 
 ## Installs `dockerize`
